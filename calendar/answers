@@ -1,0 +1,11 @@
+Q 1 :- Explain how a typical HTTP request is processed with the framework (the request lifecycle)
+Answer:
+* an HTTP request is received by the framework. When HTTP request is received by framework(MVC), it see it as an event
+*The Router component tries to find the most specific route able to accept this request.Router translate this request into action call(which is a static public method of controller).This event have two pieces of information:-
+(request path and method)
+The controller lsiten for http request, extract the relevant data from this event,and applies changes on the underlying model Objects.
+* If a complex view needs to be generated, a template file is rendered
+* The result of the action method(HTTP Response code,content) is then written as an HTTP response
+
+Q2: How could you test user interfaces with the testing facilities in play! framework?
+Answer: Selenium test are written to test UI. 
