@@ -30,9 +30,7 @@ public class Calendar {
  		}
  		return todayEvent;
      }
-     public List<Event> eventsOnDay(){
- 		return calEvents;
-     }
+    
      public List<Event> myEventsOnDay(User userCal, Date day){
     	 List<Event> todayEvent = new LinkedList<Event>();
  		for(Event event: calEvents){

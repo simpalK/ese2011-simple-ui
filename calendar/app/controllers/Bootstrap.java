@@ -19,7 +19,6 @@ public class Bootstrap extends Job {
         	Calendar calendar1;
         	
         	SimpleDateFormat df = new SimpleDateFormat("dd.MM.yyyy HH:mm");
-    		df = new SimpleDateFormat("dd.MM.yyyy HH:mm");
     
         user1 = new User("simpal.kumar@gmail.com", "1");
     		user1.addCalendar("fallsem2011");
